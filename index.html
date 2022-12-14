@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanelo</title>
+  </head>
+  <body class="w-full h-80 bg-white">
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between ">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl font-semibold md:cursor-pointer">
+              <img class="h-7 inline" src="./logo.png" alt=""> Vanelo
+            </span>
+            <span class="text-3xl mx-2 cursor-pointer md:hidden block">
+              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+
+          <ul class="md:flex md:items-center md:mx-7 z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+              <a href="" class="text-2xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="" class="text-2xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Features</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="" class="text-2xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Pricing</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="" class="text-2xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Resources</a>
+            </li>
+            <div>
+              <button class="text-[#182C6A] text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-black hover:text-white">Enter</button>
+              <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700">Try it Now!</button>
+            </div>
+          </ul>
+    </nav>
+    <section class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-20 items-center px-12 my-2 md:py-12">
+      <div class="flex flex-col items-start justify-between gap-4">
+        <h1 class="text-6xl text-[#182C6A]">Better book-keeping for your business</h1>
+        <h1 class="text-4xl font-bold text-[#1D2120]">Simplifies. Grows. Empowers.</h1>
+        <p class="text-left text-2xl">We put at your disposal the necessary tools and services to simplify the management of your business and achieve your goals.</p>
+        <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 w-1/3 hover:bg-cyan-700">Sign Up</button>
+      </div>
+      <div class="pt-6">
+        <img class="" src="./assets/hero-section.webp" alt="">
+      </div>
+    </section>
+    <section class="bg-[#182C6A] flex flex-col items-center px-4 py-8">
+      <h2 class="text-3xl text-center text-white">One less thing to worry about</h2>
+      <p class="text-xl text-white">Your free Wave account gets you access to all this and more:</p>
+      <div class="grid grid-cols-2 gap-2 pl-20">
+        <div class="text-white text-2xl w-3/4">
+          <p>A user-friendly dashboard built for you, not your accountant.</p>
+        </div>
+        <div class="text-white text-2xl w-3/4">
+          <p>A user-friendly dashboard built for you, not your accountant.</p>
+        </div>
+        <div class="text-white text-2xl w-3/4">
+          <p>A user-friendly dashboard built for you, not your accountant.</p>
+        </div>
+        <div class="text-white text-2xl w-3/4">
+          <p>A user-friendly dashboard built for you, not your accountant.</p>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function Menu(event) {
+      let list = document.querySelector('ul');
+
+      event.name === 'menu' ? (event.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : 
+      (event.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));   
+}
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Fredoka' : ['Fredoka-Medium', 'system-ui']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

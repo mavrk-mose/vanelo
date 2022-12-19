@@ -8,7 +8,7 @@
     <title>Vanelo: Accounting software</title>
   </head>
 <body class="w-full h-80 bg-[#f9f4f1] font-Fredoka">
-    <nav class="p-5 md:flex md:items-center md:justify-between z-10 fixed w-full bg-[#f9f4f1] shadow-sm">
+    <nav class="p-5 md:flex md:items-center md:justify-between z-10 fixed w-full bg-[#f9f4f1]">
           <div class="flex justify-between items-center">
             <span class="text-2xl text-[#182C6A] font-semibold md:cursor-pointer">
               <img class="h-7 inline" src="./logo.png" alt=""> Vanelo
@@ -20,42 +20,64 @@
 
           <ul class="md:flex md:items-center md:mx-7 z-10 md:z-auto md:static absolute bg-white md:bg-[#f9f4f1] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 shadow md:shadow-none">
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Home</a>
+              <div href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500 peer">Features  
+                <img class="w-5 h-5 inline" src="./assets/dropdown.svg" alt="">
+              </div> 
+              <div class="hidden z-10 mt-5 divide-y peer-hover:grid hover:grid grid-cols-2 gap-4 w-60 bg-[#f9f4f1] drop-shadow-lg transition-all ease-in duration-500 text-[#182C6A]">
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Invoicing</a>
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Payroll</a>
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Payments</a>
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Banking</a>
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Advisors</a>
+                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Accounting</a>
+              </div>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Features</a>
+              <a href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500">Pricing</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Pricing</a>
+              <a href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500">Resources
+                <img class="ml-1 w-5 h-5 inline" src="./assets/dropdown.svg" alt="">
+              </a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#1FFC02] duration-500">Resources</a>
+              <a href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500">Community</a>
             </li>
             <li>
-              <button class="text-[#182C6A] text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-black hover:text-white border-solid border-2 border-[#182C6A]">Enter</button>
-              <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700">Try it Now!</button>
+              <button class="text-[#182C6A] text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-black hover:text-white border-solid border-2 border-[#182C6A]">Sign in</button>
+              <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700">Sign up</button>
             </li>
           </ul>
     </nav>
     <section class="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 gap-x-20 px-12 pt-24 md:pt-28 md:pb-16">
-      <div class="flex flex-col items-start justify-between gap-4">
-        <h1 class="text-5xl md:text-6xl text-[#182C6A] text-center md:text-left">Better book-keeping for your business</h1>
-        <h1 class="text-3xl md:text-4xl text-center md:text-left font-semibold text-[#1D2120]">Simplifies. Grows. Empowers.</h1>
-        <p class="text-center md:text-left text-xl md:text-2xl text-[#1D2120] font-sans">We put at your disposal the necessary tools and services to simplify the management of your business and achieve your goals.</p>
+      <div class="flex flex-col items-start p-4 gap-4">
+        <h1 class="text-5xl md:text-6xl text-[#182C6A] text-center md:text-left">All the financial tools you need in one software</h1>
+        <h1 class="text-3xl md:text-4xl text-center md:text-left font-semibold text-[#1D2120]">Manage your money and business with the best software for small businesses</h1>
         <form action="" class="flex flex-col text-xl w-full md:w-1/2 justify-center font-sans">
           <label for="">Email Address</label>
           <input type="text" class="rounded" placeholder="Enter your email">
           <label for="">Password</label>
           <input type="text" class="rounded" placeholder="Create your password">
         </form>
-        <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 md:px-6 py-2 md:py-4 md:mx-6 w-full md:w-1/2 hover:bg-cyan-700 font-sans">Create your free account</button>
+        <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 md:px-6 py-2 md:py-4 md:mx-6 w-full md:w-1/2 hover:bg-cyan-700 font-sans">Get started</button>
       </div>
       <div class="p-4 md:p-0">
         <img class="h-[60vh] md:h-auto" src="./assets/hero-section.webp" alt="">
       </div>
     </section>
+    <section class="w-full min-h-screen flex flex-col items-center p-4">
+      <div class="">
+        <h1 class="text-3xl md:text-4xl text-center">More than 1,000 businesses already work with Vanelo</h1>
+      </div>
+      <div class="w- md:w-[60vw] md:h-[60vh] mt-12">
+        <video src="./assets/vanelo.mp4" class="w-full rounded-xl" controls>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
     <section class="w-full min-h-screen bg-[#182C6A] flex flex-col items-center px-8 py-8">
-      <h2 class="text-3xl md:text-4xl text-center text-white">One less thing to worry about</h2>
+      <h2 class="text-3xl md:text-4xl text-center text-white">Why Use Vanelo</h2>
       <p class="text-xl font-sans text-white">Your free vanello account gets you access to all this and more:</p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 md:px-20 font-sans">
         <div class="text-white text-2xl flex gap-6">
@@ -121,7 +143,7 @@
                           <a href="#" class="hover:underline">Invoicing</a>
                       </li>
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Payments</a>
+                          <a href="#" class="hover:underline">Pricing</a>
                       </li>
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Payments</a>
@@ -152,7 +174,7 @@
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Support &amp; Tools </h2>
                 <ul class="text-gray-600 dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline ">Github</a>
+                        <a href="#" class="hover:underline">Help Center</a>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Discord</a>

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanelo: Accounting software</title>
   </head>
-<body class="w-full h-80 bg-[#f9f4f1] font-Fredoka">
-    <nav class="p-5 md:flex md:items-center md:justify-between z-10 fixed w-full bg-[#f9f4f1]">
+<body class="w-full h-80 bg-light font-Fredoka">
+    <nav class="p-5 md:flex md:items-center md:justify-between z-10 fixed w-full bg-light h-16">
           <div class="flex justify-between items-center">
-            <span class="text-2xl text-[#182C6A] font-semibold md:cursor-pointer">
+            <span class="text-2xl text-brand font-semibold md:cursor-pointer">
               <img class="h-7 inline" src="./logo.png" alt=""> Vanelo
             </span>
             <span class="text-3xl mx-2 cursor-pointer md:hidden block">
@@ -18,108 +18,275 @@
             </span>
           </div>
 
-          <ul class="md:flex md:items-center md:mx-7 z-10 md:z-auto md:static absolute bg-white md:bg-[#f9f4f1] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 shadow md:shadow-none">
+          <ul class="md:flex md:items-center md:mx-7 z-10 md:z-auto md:static absolute bg-white md:bg-light w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 shadow md:shadow-none">
             <li class="mx-4 my-6 md:my-0">
-              <div href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500 peer relative">Features  
-                <img class="w-5 h-5 inline" src="./assets/dropdown.svg" alt="">
-              </div> 
-              <div class="hidden z-10 mt-5 divide-y peer-hover:grid hover:grid grid-cols-2 gap-4 w-60 bg-[#f9f4f1] drop-shadow-lg transition-all ease-in duration-500 text-[#182C6A] absolute">
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Invoicing</a>
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Payroll</a>
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Payments</a>
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Banking</a>
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Advisors</a>
-                  <a class="px-5 py-3 hover:bg-gray-200" href="#">Accounting</a>
-              </div>
+                <div href="" class="text-xl text-brand hover:text-hover duration-500 peer">Features  
+                  <img class="w-5 h-5 inline" src="./assets/dropdown.svg" alt="">
+                </div> 
+                <div class="hidden z-10 mt-5 divide-y peer-hover:grid hover:grid grid-cols-2 gap-4 w-60 bg-dropdown drop-shadow-lg transition-all ease-in duration-500 text-brand absolute">
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Invoicing</a>
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Payroll</a>
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Payments</a>
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Banking</a>
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Advisors</a>
+                    <a class="px-5 py-3 hover:bg-gray-200" href="#">Accounting</a>
+                </div>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500">Pricing</a>
+              <a href="" class="text-xl text-brand hover:text-hover duration-500">Pricing</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <div href="" class="text-xl text-[#182C6A] peer hover:text-[#2f5be2] duration-500 relative">Resources
+              <div href="" class="text-xl text-brand peer hover:text-hover duration-500 relative">Resources
                 <img class="ml-1 w-5 h-5 inline" src="./assets/dropdown.svg" alt="">
               </div>
-              <div class="hidden z-10 mt-5 divide-y peer-hover:grid hover:grid grid-cols-1 gap-4 w-60 bg-[#f9f4f1] drop-shadow-lg transition-all ease-in duration-500 text-[#182C6A] absolute">
+              <div class="hidden z-10 mt-5 divide-y peer-hover:grid hover:grid grid-cols-1 gap-4 w-60 bg-dropdown drop-shadow-lg transition-all ease-in duration-500 text-brand absolute">
                 <a class="px-5 py-3 hover:bg-gray-200" href="#">Blog</a>
                 <a class="px-5 py-3 hover:bg-gray-200" href="#">Support</a>
                 <a class="px-5 py-3 hover:bg-gray-200" href="#">Accounting Glossary</a>
             </div>
             </li>
             <li class="mx-4 my-6 md:my-0">
-              <a href="" class="text-xl text-[#182C6A] hover:text-[#2f5be2] duration-500">Community</a>
+              <a href="" class="text-xl text-brand hover:text-hover duration-500">Community</a>
             </li>
             <li>
-              <button class="text-[#182C6A] text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-black hover:text-white border-solid border-2 border-[#182C6A]">Sign in</button>
-              <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700">Sign up</button>
+              <button class="text-brand text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-black hover:text-white border-solid border-2 border-brand">Sign in</button>
+              <button class="bg-brand text-white text-xl rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700">Sign up</button>
             </li>
           </ul>
     </nav>
-    <section class="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 gap-x-20 px-12 pt-24 pb-12 md:pt-28 md:pb-24">
+                      <!-- Hero Section -->
+    <section class="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 gap-x-20 px-12 pt-12 pb-12 md:pt-16 md:pb-24">
       <div class="flex flex-col items-start p-4 gap-4 justify-around">
         <div class="flex flex-col justify-between">
-          <h1 class="text-5xl md:text-7xl text-[#182C6A] text-center md:text-left">All the financial tools you need in one software</h1>
-          <h1 class="text-2xl md:text-2xl text-center md:text-left font-semibold text-[#1D2120]">Manage your money and business with the best software for small businesses</h1>
+          <h1 class="text-5xl md:text-7xl text-brand text-center md:text-left">All the financial tools you need in one software</h1>
+          <h1 class="text-2xl md:text-2xl text-center md:text-left font-semibold text-typo">Manage your money and business with the best software for small businesses</h1>
         </div>
-        <button class="bg-[#182C6A] text-white text-xl rounded-full duration-500 md:px-6 py-2 md:py-4 md:mx-6 w-full md:w-1/2 hover:bg-cyan-700 font-sans">Get started</button>
+        <button class="bg-brand text-white text-xl rounded-full duration-500 md:px-6 py-2 md:py-4 w-full md:w-1/2 hover:bg-cyan-700 font-sans">Get started</button>
       </div>
-      <div class="p-4 md:p-0 h-[40vh] md:h-[50vh] w-3/4">
-        <img class=" w-full rounded-t-full rounded-b-full" src="./assets/hero.png" alt="">
+      <div class="p-4 h-14 md:h-[14vh]">
+        <img class="md:max-w-[40vw] rounded-full" src="./assets/hero.png" alt="">
       </div>
     </section>
-    <section class="w-full min-h-screen flex flex-col md:flex-row items-center px-6 md:px-12">
-      <div class="">
+                      <!-- Explainer Video Section -->
+    <section class="w-full min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12">
+      <div class="md:max-w-[50vw] min-h-full">
         <video src="./assets/vanelo.mp4" class="w-full rounded-xl" controls>
           Your browser does not support the video tag.
         </video>
       </div>
       <div class="w-auto">
-        <h1 class="text-3xl md:text-4xl text-center">More than 1,000 businesses already work with Vanelo</h1>
+        <h1 class="text-3xl md:text-4xl text-center text-typo">More than 1,000 businesses already work with Vanelo</h1>
       </div>
     </section>
-    <section class="w-full min-h-[60vh] bg-[#182C6A] flex flex-col items-center px-8 py-8">
-      <h2 class="text-3xl md:text-4xl text-center text-white">Why Use Vanelo</h2>
+                      <!-- Why Vanelo Section -->
+    <section class="w-full min-h-[60vh] flex flex-col items-center px-8 py-8">
+      <h2 class="text-3xl md:text-4xl text-center text-typo">Why Use Vanelo</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-4 md:px-20 font-sans">
-        <div class="text-white text-2xl flex gap-6">
+        <div class="text-typo text-2xl flex gap-6">
           <img src="./assets/heart.png" alt="" class="h-11">
           <p>A user-friendly dashboard built for you, not your accountant.</p>
         </div>
-        <div class="text-white text-2xl flex gap-6 ">
+        <div class="text-typo text-2xl flex gap-6 ">
           <img src="./assets/folder.png" alt="" class="h-11">
           <p>Peace of mind that you’re always organized ahead of tax season.</p>
         </div>
-        <div class="text-white text-2xl  flex gap-6">
+        <div class="text-typo text-2xl  flex gap-6">
           <img src="./assets/people.png" alt="" class="h-11">
           <p>Our in-house team of bookkeeping, accounting, and payroll coaches.</p>
         </div>
-        <div class="text-white text-2xl flex gap-6">
+        <div class="text-typo text-2xl flex gap-6">
           <img src="./assets/potted-plant.png" alt="" class="h-11">
           <p>A complete picture of your business health, wherever you are.</p>
         </div>
       </div>
     </section>
-    <section class="w-full min-h-screen px-8 py-4 flex flex-col items-center">
-      <h1 class="text-[#182C6A] text-2xl md:text-4xl text-center w-auto pt-8">Vanelo has helped over 1,000 small business owners take control of their finances.</h1>
-      <div class="grid grid-cols-1 grid-row-5 md:grid-cols-3 md:grid-rows-2 w-[85vw] h-[190vh] md:h-[80vh] md:w-[70vw] py-4">
-        <div class="bg-[#9A9EF5] flex flex-col items-center border-solid border-2 border-[#182C6A]">
-          <h1 class="text-3xl md:text-4xl text-center py-4 px-4">Built for small business owners like you</h1>
-          <button class="bg-white text-[#182C6A] text-lg rounded-full duration-500 px-6 py-2 mx-4 hover:bg-cyan-700 hover:text-white">Sign me up</button>
+                      <!-- Pricing Section -->
+    <section class="w-full min-h-screen flex flex-col items-center px-8 py-8">
+      <h1 class="text-5xl text-typo">Pricing Options</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-8 py-4">
+        <div class="w-full max-w-sm p-6 bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700 ">
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Personal</h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">49</span>
+              <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+          </div>
+          <!-- List -->
+          <ul role="list" class="space-y-5 my-7">
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+              </li>
+          </ul>
+          <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
         </div>
-        <div class="flex flex-col items-center justify-center border-solid border-2 border-[#182C6A]">
-          <h1 class="">FREELANCERS</h1>
+        <div class="w-full max-w-sm p-6 bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Merchants</h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">49</span>
+              <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+          </div>
+          <!-- List -->
+          <ul role="list" class="space-y-5 my-7">
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+              </li>
+          </ul>
+          <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
         </div>
-        <div class="flex flex-col items-center justify-center border-solid border-2 border-[#182C6A]">
-          <h1>SELF-EMPLOYED ENTREPRENEURS</h1>
-        </div>
-        <div class="flex flex-col items-center justify-center border-solid border-2 border-[#182C6A]">
-          <h1>CONSULTANTS</h1>
-        </div>
-        <div class="flex flex-col items-center justify-center border-solid border-2 border-[#182C6A]">
-          <h1>CONTRACTORS</h1>
+        <div class="w-full max-w-sm p-6 bg-white border rounded-lg shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Enterprise</h5>
+          <div class="flex items-baseline text-gray-900 dark:text-white">
+              <span class="text-3xl font-semibold">$</span>
+              <span class="text-5xl font-extrabold tracking-tight">49</span>
+              <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+          </div>
+          <!-- List -->
+          <ul role="list" class="space-y-5 my-7">
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">2 team members</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">20GB Cloud storage</span>
+              </li>
+              <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">API Access</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
+              </li>
+              <li class="flex space-x-3 line-through decoration-gray-500">
+                  <!-- Icon -->
+                  <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                  <span class="text-base font-normal leading-tight text-gray-500">24×7 phone & email support</span>
+              </li>
+          </ul>
+          <button type="button" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
         </div>
       </div>
     </section>
-    
-    <footer class="p-4 bg-[#182C6A] sm:p-6">
+                      <!-- FAQ Section -->
+    <section class="w-full min-h-screen flex flex-col md:flex-row items-center justify-around px-8 py-6">
+      <div class="max-w-[40vw] md:max-w-[25vw] md:text-5xl gap-x-8 text-center md:text-left">
+        <h1 class="text-5xl">Frequently Asked Questions</h1>
+      </div>
+      <div class="flex flex-col md:max-w-[25vw] min-h-[30vh]">
+        <div class="flex flex-col py-4">
+          <button class="peer">
+            <h1 class="text-2xl font-semibold">Is your Software actually free?</h1>
+          </button>
+          <div class="invisible peer-focus:visible focus:visible">
+            <p>Our our accounting software, invoicing software, or US-only banking software are 100% free. There are no trials, subscriptions, or hidden fees.
+              Vanelo's optional paid features include online payment processing, payroll software, 
+              and access to personalized bookkeeping services and coaching through Vanelo Advisors. If you're interested in using payroll software, you can start a free 30-day trial when you sign up for Vanelo.</p>
+          </div>
+        </div>
+        <div class="flex flex-col py-4">
+          <button class="peer">
+            <h1 class="text-2xl font-semibold">Is your Software actually free?</h1>
+          </button>
+          <div class="invisible peer-focus:visible focus:visible">
+            <p>Our our accounting software, invoicing software, or US-only banking software are 100% free. There are no trials, subscriptions, or hidden fees.
+              Vanelo's optional paid features include online payment processing, payroll software, 
+              and access to personalized bookkeeping services and coaching through Vanelo Advisors. If you're interested in using payroll software, you can start a free 30-day trial when you sign up for Vanelo.</p>
+          </div>
+        </div>
+        <div class="flex flex-col py-4">
+          <button class="peer">
+            <h1 class="text-2xl font-semibold">Is your Software actually free?</h1>
+          </button>
+          <div class="invisible peer-focus:visible focus:visible">
+            <p>Our our accounting software, invoicing software, or US-only banking software are 100% free. There are no trials, subscriptions, or hidden fees.
+              Vanelo's optional paid features include online payment processing, payroll software, 
+              and access to personalized bookkeeping services and coaching through Vanelo Advisors. If you're interested in using payroll software, you can start a free 30-day trial when you sign up for Vanelo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-4 bg-brand sm:p-6">
       <div class="md:flex md:justify-center md:gap-x-40 md:items-center pl-6">
           <div class="mb-6 md:mb-0">
               <a href="#" class="flex items-center">
@@ -130,7 +297,7 @@
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4 md:mt-4">
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Features</h2>
-                  <ul class="text-gray-600 dark:text-gray-400">
+                  <ul class="text-white dark:text-gray-400">
                       <li class="mb-4">
                           <a href="#" class="hover:underline">Accounting</a>
                       </li>
@@ -150,41 +317,41 @@
               </div>
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Helpful Links</h2>
-                  <ul class="text-gray-600 dark:text-gray-400">
+                  <ul class="text-white dark:text-gray-400">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline ">Github</a>
+                          <a href="#" class="hover:underline ">Blog</a>
                       </li>
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Discord</a>
+                          <a href="#" class="hover:underline">Help Center</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="hover:underline ">Github</a>
+                        <a href="#" class="hover:underline ">Invoice templates</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="hover:underline ">Github</a>
+                        <a href="#" class="hover:underline ">Accounting education center</a>
                       </li>
                       <li class="mb-4">
-                        <a href="#" class="hover:underline ">Github</a>
+                        <a href="#" class="hover:underline ">Payroll education center</a>
                       </li>
                   </ul>
               </div>
               <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Support &amp; Tools </h2>
-                <ul class="text-gray-600 dark:text-gray-400">
+                <ul class="text-white dark:text-gray-400">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Help Center</a>
+                        <a href="#" class="hover:underline">How support works</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Discord</a>
+                        <a href="#" class="hover:underline">Copyright</a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="hover:underline">Discord</a>
+                      <a href="#" class="hover:underline">Accounting</a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="hover:underline">Discord</a>
+                      <a href="#" class="hover:underline">Invoicing generators</a>
                     </li>
                     <li class="mb-4">
-                      <a href="#" class="hover:underline">Discord</a>
+                      <a href="#" class="hover:underline">Payroll calculators</a>
                     </li>
                 </ul>
             </div>
@@ -232,7 +399,7 @@
         </div>
       </div>
     </footer>
-
+                      <!-- script tags go here -->
     <script>
       function Menu(event) {
       let list = document.querySelector('ul');
